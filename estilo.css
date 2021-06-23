@@ -2,6 +2,13 @@
 /* importá-las aqui... e definir as `font-family` da turminha... */
 
 
+@import "fonts/ravie.css";
+
+@import "fonts/verdana.css";
+
+h1{
+  font-family:Ravie;
+}
 body {
   background-color: #fff;
 }
