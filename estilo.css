@@ -98,23 +98,50 @@ html, body, #recipiente{
 
 /* EXERCÍCIO 4: cada item do menu */
 article {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2em;
 }
 
+#cardapio {
+  padding: 20px;
+}
 
 /* EXERCÍCIO 5: o rodapé */
 #rodape-pagina {
+  display: flex;
+  padding: 0 15px;
+  justify-content: flex-end;
 }
+#rodape-pagina img {
+  margin-top: 46px;
+  margin-left: 0;
+  margin-bottom: 20px;
+  margin-right: 0;
+
+}
+
 
 /* EXERCÍCIO 6: lateral */
 #lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 
 /* EXERCÍCIO 7: o ticket */
 #ticket {
+  position: absolute;
+  top: 50%;
+  left: -89px;
+  transition: left 100ms ease-out;
+
 }
 
 #ticket:hover {
+  left: 0;
+  transition: left 500ms ease-out;
 }
 
 
