@@ -77,19 +77,21 @@ html, body, #recipiente{
 
 /* EXERCÍCIO 3: cabeçalho da página */
 #cabecalho-pagina {
-
+  padding: 10px;
 }
 
 #cabecalho-pagina h1 {
   margin: 0;
   font-size: 36px;
   color: #e90c0c;
+  text-align: center;
   font-weight: normal;
 }
 
 #cabecalho-pagina h2 {
   margin: 0;
   font-size: 24px;
+  text-align: end;
   color: #333;
   font-weight: normal;
 }
