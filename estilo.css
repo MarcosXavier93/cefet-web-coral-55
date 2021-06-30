@@ -11,6 +11,7 @@ h1{
 }
 body {
   background-color: #fff;
+  margin: 8%;
 }
 
 strong {
@@ -43,12 +44,16 @@ strong {
 
 
 /* EXERCÍCIO 2: layout da página */
+html, body, #recipiente{
+  height: 100vh;
+}
 #recipiente {
-  /* layout da página aqui */
-  /* ... */
-  /* ... */
-  /* ... */
-  /* ... */
+  width: 800px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 154px auto;
+  min-height: 100vh;
+  margin: 0 auto;
 }
 
 #cabecalho-pagina {
