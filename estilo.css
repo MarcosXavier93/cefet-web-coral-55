@@ -57,19 +57,20 @@ html, body, #recipiente{
 }
 
 #cabecalho-pagina {
-
+  grid-column: 2;
 }
 
 #lateral {
-
+  grid-row: 1/4;
+  grid-column: 1/2;
 }
 
 #cardapio {
-
+  grid-column: 2;
 }
 
 #rodape-pagina {
-
+  grid-column: 2;
 }
 
 
