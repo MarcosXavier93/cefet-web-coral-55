@@ -6,40 +6,59 @@
 
 @import "fonts/verdana.css";
 
+:root {
+  --cor-de-fundo: #fff;
+  --cor-de-texto: #333;
+  --cor-do-header: #e90c0c;
+  --cor-do-strong:#d027aa;
+  --cor-de-borda-1: #d3d3d3;
+  --cor-de-borda-2: #aac0ae;
+  --cor-de-gradiente-1: #f6f1b2;
+  --cor-de-gradiente-2: #4599b2;
+}
+
+
 h1{
-  font-family:Ravie;
+  font-family: "Ravie", sans-serif;
+}
+
+h3 {
+  font-size: 18px;
+  color: var(--cor-de-texto);
 }
 body {
-  background-color: #fff;
-  margin: 8%;
+  background-color: var(--cor-de-fundo);
+  font-family: "Verdana", "OpenSans", sans-serif;
+  margin: 0 auto;
+  padding: 0;
 }
 
 strong {
-  color: #d027aa;
+  color: var(--cor-do-strong);
 }
 
 #recipiente {
-  background-image: linear-gradient(to bottom, #f6f1b2, #4599b2 80%);
-  border-left: 1px solid #d3d3d3;
-  border-right: 1px solid #d3d3d3;
+  background-image: linear-gradient(to bottom, var(--cor-de-gradiente-1), var(--cor-de-gradiente-2) 80%);
+  border-left: 1px solid var(--cor-de-borda-1);
+  border-right: 1px solid var(--cor-de-borda-1);
 }
 
 #cardapio {
   background-color: rgba(255, 255, 255, 0.2);
-  border-top: 1px solid #aac0ae;
-  border-bottom: 1px solid #aac0ae;
-  border-left: 1px solid #aac0ae;
+  border-top: 1px solid var(--cor-de-borda-2);
+  border-bottom: 1px solid var(--cor-de-borda-2);
+  border-left: 1px solid var(--cor-de-borda-2);
 }
 
 #cardapio h3 {
   font-size: 18px;
-  color: #333;
+  color: var(--cor-de-texto);
   margin-top: 30px;
 }
 
 #cardapio article {
   font-size: 14px;
-  color: #333;
+  color: var(--cor-de-texto);
 }
 
 
@@ -156,7 +175,24 @@ article {
   position: relative;
   left: -44px;
 }
-
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-do-texto: #eee;
+    --cor-de-gradiente-1: #083f5b;  
+    --cor-de-gradiente-2: #100021;  
+    --background-color: #414141;
+    --linear-gradient-start: #0d1a53;
+    --linear-gradient-end: #000522;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      --text-color: #333;
+      --background-color: #fff;
+      --linear-gradient-start: #f6f1b2;
+      --linear-gradient-end: #4599b2;
+    }
+  }
 /* EXERCÍCIO 9: bolhas - no HTML e no JS */
 /* --- */
 
